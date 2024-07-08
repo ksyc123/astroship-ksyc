@@ -1,0 +1,60 @@
+---
+draft: false
+title: "导航"
+snippet: "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat"
+publishDate: "2024-07-08 15:36"
+image: {
+  src: "https://images.unsplash.com/photo-1542393545-10f5cde2c810?&fit=crop&w=430&h=240",
+  alt: "typography"
+}
+category: "孤岛"
+author: "KSYC"
+tags: [astro]
+---
+
+import Button from "@components/ui/button.astro";
+
+## <a name="Code"></a>Code
+
+```go
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
+```
+
+
+
+
+![Super wide](https://images.unsplash.com/photo-1471128466710-c26ff0d26143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MDc4MTk3Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)
+
+
+
+## MDX
+
+```js
+---
+publishDate: '2024.07.08'
+title: 'Markdown'
+---
+
+## 一个新博客
+
+不知道写些什么
+```
+
+<div>
+  <Button>点一哈</Button>
+</div>
+
